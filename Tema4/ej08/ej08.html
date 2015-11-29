@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		div.contenedor{
+			border: 1px solid black;
+			overflow: hidden;
+		}
+
+		div.sprite{
+			height: 85px;
+			width: 85px;
+		}
+		div.izq{
+			background-image: url("flecha.png");
+			background-position: 0px -85px;
+			float: left;
+		}
+		div.drch{
+			background-image: url("flecha.png");
+			background-position: 0px 0px;
+			float: right;
+		}
+
+		div.izq:hover{
+			background-position: -255px -85px;
+		}
+		div.drch:hover{
+			background-position: -255px 0px;
+		}
+
+
+
+	</style>
+	<title>Ejercicio Sprites</title>
+</head>
+<body>
+	<div class="contenedor">
+		<div class="sprite izq"></div>
+		<div class="sprite drch"></div>
+	</div>
+
+</body>
+</html>

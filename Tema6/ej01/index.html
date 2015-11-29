@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<style>
+			.audio{
+				border: 1px solid black;
+				width: 250px;
+				margin: 300px auto;
+			}
+		
+		
+		</style>
+	</head>
+	<body>
+		<audio id="player" src="./004cba.mp3"></audio>
+		<div class="audio">
+			<input type="image" src="./play.png" onclick="document.getElementById('player').play()">
+			<input type="image" src="./pause.png" onclick="document.getElementById('player').pause()">
+			<input type="image" src="./stop.png" onclick="document.getElementById('player').stop()">
+			<input type="image" src="./mas.png" onclick="document.getElementById('player').volume+=0.1">
+			<input type="image" src="./menos.png" onclick="document.getElementById('player').volume-=0.1">
+			
+			
+			
+		</div>
+	</body>
+</html>

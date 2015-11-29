@@ -1,0 +1,64 @@
+#contenedor{
+	width: 80%;	
+	margin: 0 auto;
+	border: 1px solid silver;
+}
+h2{
+	font-size: 2em;
+	padding-left: 10px;
+}
+ul li{
+	list-style: none;	
+	width: 45%;
+	float: left;
+	margin: 10px;
+	padding: 5px;
+}
+p.ayuda {
+	display: none;	
+}
+span.todo{
+	width: 100%;	
+}
+span.tercio{
+	width: 25%;	
+	border: 1px solid black;
+}
+span.dostercios{
+	width: 66%;
+	border: 1px solid black;
+}
+span.mitad{
+	width: 49%;
+	border: 1px solid black;
+}
+span{
+	float: left;
+}
+label{
+	display: block;
+	padding: 5px;
+}
+.titulo{
+	font-size: 1.2em;
+	font-weight: bold;
+}
+#apellido1, #apellido2{
+	width: 55%;	
+}
+#direccion{
+	width: 80%;
+}
+#codigopostal{
+	width: 95%;
+}
+li:hover{
+	background-color: #ff9;
+}
+.botones{
+	width: 90%;
+	clear: both;
+	float: none;
+	text-align: right;
+	
+}

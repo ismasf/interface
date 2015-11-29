@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+
+	
+
+	.contenedor{
+		width: 600px;
+		height: 600px;
+		
+		margin: 40px auto;
+		position: relative;
+		transform-style: preserve-3d; 
+
+
+		
+	}
+
+
+	body{
+		background-image: url("mesa.jpg");
+		background-size: 100%;
+	}
+
+	.foto1{
+		border: 1px solid black;
+		height: 220px;
+		margin: 10px 10px 30px 10px;
+		background-image: url("img1.jpg");
+		background-size: 100% 100%;
+		
+	}
+	.foto2{
+		border: 1px solid black;
+		height: 220px;
+		margin: 10px 10px 30px 10px;
+		background-image: url("img2.jpg");
+		background-size: 100% 100%;
+	}
+	.foto3{
+		border: 1px solid black;
+		height: 220px;
+		margin: 10px 10px 30px 10px;
+		background-image: url("img3.jpg");
+		background-size: 100% 100%;
+	}
+
+	.marco1{
+		border: 1px solid black;
+		width: 200px;
+		height: 250px;
+		overflow: hidden;
+		position: absolute;
+		left: 100px;
+		background-color: white;
+		top: 150px;
+		transform: rotate(30deg) translateZ(-120px);
+		transition: transform 2s;
+		
+	}
+
+	.marco3{
+		border: 1px solid black;
+		width: 200px;
+		height: 250px;
+		overflow: hidden;
+		position: absolute;
+		left: 300px;
+		top: 50px;
+		transform: rotate(-30deg) translateZ(-110px);
+		transition: transform 2s;
+		background-color: white;
+	}
+/*Se puede hacer con el z-index*/
+	.marco2{
+		border: 1px solid black;
+		width: 200px;
+		height: 250px;
+		overflow: hidden;
+		position: absolute;
+		right: 200px;
+		top: 300px;
+		transform: rotate(-10deg) translateZ(-100px);
+		transition: transform 2s;
+		background-color: white;
+	}
+
+	.marco1:hover{
+		transform: rotate(0deg) translateZ(0px);
+	}
+	.marco2:hover{
+		transform: rotate(0deg) translateZ(0px);
+	}
+	.marco3:hover{
+		transform: rotate(0deg) translateZ(0px);
+	}
+
+	</style>
+	<title>Ej13</title>
+</head>
+<body>
+<div class="contenedor">
+	<div class="marco1">
+		<div class="foto1">
+		
+		</div>
+	</div>
+	<div class="marco2">
+		<div class="foto2">
+			
+		</div>
+	</div>
+	<div class="marco3">
+		<div class="foto3">
+		
+		</div>
+	</div>
+</div>
+</body>
+</html>

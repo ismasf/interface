@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ej15</title>
+	<style type="text/css">
+		.contenedor{
+			height: 197px;
+			width: 197px;
+			background-image: url("mapa.png");
+			animation: mapaMundi 3s linear infinite;
+			border-radius: 50%;
+			box-shadow: -10px 15px 25px black;
+
+
+		}
+
+		.mapa{
+			height: 197px;
+			width: 197px;
+			background-size: 100%;
+			background-image: url("esfera.png");
+		}
+
+		@keyframes mapaMundi{
+			font{
+				background-position: 0px;
+			}
+			to{
+				background-position: -448px;
+			}
+		}
+
+
+
+	</style>
+</head>
+<body>
+<div class="contenedor">
+	<div class="mapa"></div>
+</div>
+</body>
+</html>

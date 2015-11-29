@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ej14</title>
+
+	<style type="text/css">
+	.pelota{
+		height: 150px;
+		width: 150px;
+		position: absolute;
+		background-image: url("pelota.png");
+		background-size: 100%;
+		animation: moverPelota 2s infinite alternate ease-in; 
+	}
+
+	@keyframes moverPelota{
+		0%{
+			
+			top: 0%;
+		}
+		85%{
+			height: 150px;
+			transform: scale(1,1);
+			
+		}
+		100%{
+			
+			/*height: 100px;*/
+			top: 600px;
+			transform: scale(1,0.5);
+		}
+		
+	}
+
+
+	</style>
+</head>
+<body>
+<div class="pelota"></div>
+</body>
+</html>

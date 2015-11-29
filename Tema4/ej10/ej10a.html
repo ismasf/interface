@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+<title>Formulario de alta</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<style type="text/css">
+#contenedor{
+  margin: 0 auto;
+  width: 900px;
+}
+
+li{
+  float: left;
+  width: 48%;
+  height: 200px;
+  list-style: none;
+  
+}
+label{
+  display: block;
+}
+label.titulo{
+  font-weight: bold;
+  color: black;
+} 
+span.requerido{
+  color: red;
+}
+p.ayuda{
+  visibility: hidden;
+}
+
+label{
+  color: gray;
+  margin-bottom: 5px;
+}
+
+#apellido1, #apellido2{
+  width: 300px;
+}
+
+
+
+.telef1, .telef2{
+  
+  width: 48%;
+  overflow: hidden;
+  display: inline;
+  float: left;
+}
+#email{
+  width: 250px;
+}
+
+.cod, .muni, .pro, .pa{
+  
+  width: 48%;
+  overflow: hidden;
+  display: inline;
+  float: left;
+  height: 50px;
+}
+
+li.ultimo{
+  height: 100px;
+  border-bottom: 3px solid gray;
+}
+
+.boton{
+  float: inherit;
+  height: auto;
+  width: 96%;
+  overflow: hidden;
+
+}
+ul{
+  overflow: hidden;
+}
+#alta{
+  float: right;
+  margin-top: 10px;
+}
+li:hover{
+  background-color: #FF9;
+}
+input:focus{
+  border: 3px solid #E6B700;
+
+}
+
+
+</style>
+</head>
+
+<body>
+<div id="contenedor">
+
+<h2>Formulario de alta</h2>
+
+<form method="post" action="#">
+<ul>
+<li>
+  <label class="titulo" for="nombre">Nombre y apellidos <span class="requerido">*</span></label>
+  <div>
+    <span>
+      <input id="nombre" name="nombre" value="" />
+      <label for="nombre">Nombre</label>
+    </span>
+
+    <span>
+      <input id="apellido1" name="apellido1" value="" />
+      <label for="apellido1">Primer apellido</label>
+    </span>
+    
+    <span>
+      <input id="apellido2" name="apellido2" value="" />
+      <label for="apellido2">Segundo apellido</label>
+    </span>
+  </div>
+
+  <p class="ayuda">No te olvides de escribir tambi&eacuten tu segundo apellido</p>
+</li>
+
+<li>
+  <label class="titulo" for="direccion">Direcci&oacuten <span class="requerido">*</span></label>
+
+  <div id="dir">
+    <span>
+      <input id="direccion" name="direccion" value="" />
+      <label for="direccion">Calle, n&uacutemero, piso, puerta</label>
+    </span>
+
+    <span class="cod">
+      <input id="codigopostal" name="codigopostal" value="" />
+      <label for="codigopostal">C&oacutedigo postal</label>
+    </span>
+    
+    <span class="muni">
+      <input id="municipio" name="municipio" value="" />
+      <label for="municipio">Municipio</label>
+    </span>
+    
+    <span class="pro">
+      <select id="provincia" name="provincia">
+        <option value=""></option>
+        <option value="provincia1">Provincia 1</option>
+        <option value="provincia2">Provincia 2</option>
+        <option value="provincia3">Provincia 3</option>
+      </select>
+      <label for="provincia">Provincia</label>
+    </span>
+    
+    <span class="pa">
+      <select id="pais" name="pais">
+        <option value=""></option>
+        <option value="pais1">Pa&iacutes 1</option>
+        <option value="pais2">Pa&iacutes 2</option>
+        <option value="pais3">Pa&iacutes 3</option>
+      </select>
+      <label for="pais">Pa&iacutes</label>
+    </span>
+  </div>
+
+  <p class="ayuda">El c&oacutedigo postal es imprescindible para poder recibir los pedidos</p>
+</li>
+
+<li class="ultimo">
+  <label class="titulo" for="email">Email</label>
+
+  <div>
+    <span>
+      <input id="email" name="email" value="" />
+    </span>
+  </div>
+
+  <p class="ayuda">Aseg&acuterate de que sea v&aacutelido</p>
+</li>
+
+<li class="ultimo">
+  <label class="titulo" for="telefonofijo">Tel&eacutefono <span class="requerido">*</span></label>
+
+  <div class="dir2">
+    <span class="telef1">
+      <input id="telefonofijo" name="telefonofijo" value="" />
+      <label for="telefonofijo">Fijo</label>
+    </span>
+
+    <span class="telef2">
+      <input id="telefonomovil" name="telefonomovil" value="" />
+      <label for="telefonomovil">M&oacutevil</label>
+    </span>
+  </div>
+
+  <p class="ayuda">Sin prefijo de pa&iacutes y sin espacios en blanco</p>
+</li>
+
+<li class="boton">
+  <input id="alta" type="submit" value="Darme de alta &rarr;" />
+</li>
+
+</ul>
+</form>
+
+</div>
+</body>
+</html>

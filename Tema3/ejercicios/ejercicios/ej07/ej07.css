@@ -1,0 +1,189 @@
+/* === IMPORTANTE ===================================================
+   No modificar estos estilos, ya que son imprescindibles para
+   que la página se vea correctamente.
+   ================================================================== */
+
+/*-- Básico ----------------------------------------------------------*/
+ul, ul li { margin: 0; padding: 0; list-style: none; }
+h1, h2, h3, p, form { margin: 0; padding: 0; }
+.clear { clear: both; }
+img { border: none; }
+
+/*-- Layout ----------------------------------------------------------*/
+#contenedor {
+  width: 90%;
+  max-width: 900px;
+  width: expression(document.body.clientWidth > 901? "900px": "auto");
+  margin: 0 auto;
+}
+
+/*#cabecera, #menu, #lateral, #contenido, #contenido #principal, #contenido #secundario, #pie {
+  border: 2px solid #777;
+}*/
+
+#cabecera { clear: both; }
+#menu { clear: both; }
+#lateral { float: left; width: 20%; }
+#contenido { float: right; width: 78%; }
+#contenido #principal { float: left; width: 73%; }
+#contenido #secundario { float: right; width: 20%; }
+#pie { clear: both; }
+
+/*-- Cabecera --------------------------------------------------------*/
+#cabecera #logo { float: left; }
+#cabecera #buscador { float: right; }
+
+/*-- Menu ------------------------------------------------------------*/
+#menu ul#menu_principal li { display: inline; float: left; }
+
+/*-- Sección Principal -----------------------------------------------*/
+#contenido #principal .articulo img { width: 100px; float: left; }
+
+/*-- Pie de página ---------------------------------------------------*/
+#pie .enlaces   { float: left; }
+#pie .copyright { float: right; }
+
+/* === IMPORTANTE ===================================================
+   A partir de aquí, se pueden añadir todos los estilos propios que 
+   sean necesarios.
+   ================================================================== */
+
+#cabecera{
+  padding: 1em;
+}
+#menu{
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+}
+#noticias,#publicidad,#principal,#secundario{
+  padding: 0.5em;
+}
+#pie{
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+.articulo{
+  margin: 1em;
+}
+.articulo img{
+  margin: 0.5em;
+}
+#publicidad{
+  margin-top: 1em;
+}
+#pie{
+  margin-top: 1em;
+}
+
+/* ej05, el punto uno de quitar bordes, he comentado la parte de arriba que asignaba bordes. */
+
+#menu{
+  border-bottom: 1px solid #004C99;
+}
+
+#noticias{
+  border: 1px solid #C5C5C5;
+}
+
+#publicidad{
+  border: 1px dashed #CC6600;
+  
+}
+
+#secundario{
+  border: 1px solid #CC6600;
+}
+
+#pie{
+  border-top: 1px solid #C5C5C5;
+  border-bottom: 1px solid #C5C5C5;
+}
+
+/*A partir de aqui ej06 */
+
+#noticias, #pie{
+  background-color: #F8F8F8;
+}
+
+#publicidad{
+  background-color: #FFF6CD;
+}
+
+#secundario h2{
+  background-color: #DB905C;
+  padding: .2em;
+}
+
+#menu{
+  background-image: url("fondo_menu.gif");
+}
+
+#cabecera h1{
+  background-image: url("logo.gif");
+  background-repeat: no-repeat;
+}
+
+#cabecera h1 span{
+  visibility: hidden;
+}
+
+/* ej07 */
+
+body{
+  color: black; 
+  font-family: Arial;
+  font-size: 0.9em;
+  line-height: 1.4;
+}
+
+.articulo h2{
+  color: #CC6600;
+  font-size: 1.6em;
+  line-height: 1.2;
+  margin-bottom: 0.3em;
+}
+
+#menu li{
+  margin-right: 1em;
+}
+
+#menu li a{
+  color: white;
+  font-size: 1.3em;
+}
+
+#lateral{
+  font-size: 0.9em;
+}
+
+#noticias span{
+  color: #999;
+  display: block;
+}
+
+#noticias h3{
+  color: #003366;
+}
+
+#publicidad{
+  color: #555;
+}
+#publicidad a{
+  color: #CC6600;
+}
+
+.articulo a{
+  color: #CC6600;
+}
+.articulo p{
+  margin-top: 0.3em;
+}
+
+#secundario h2{
+  color: white;
+  font-size: 1.1em;
+}
+
+#pie{
+  color: #555;
+}

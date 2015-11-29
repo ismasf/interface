@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+	.menu ul{
+		
+		list-style: none;
+		margin: 0px;
+		padding: 2px;
+		width: 200px;
+	}
+	
+	 
+	.menu li{
+		border-top: 1px solid black;
+		border-right: 1px solid black;
+		border-left: 1px solid black;
+		
+	}
+	li.ultima{
+		border-bottom: 1px solid black;
+	}
+
+	div.flecha{
+		height: 16px;
+		width: 16px;
+		background-image: url("flecha_inactiva.png");
+		float: left;
+
+		margin-right: 2px;
+	}
+
+	div.flecha:hover{
+		background-image: url("flecha_activa.png");
+	}
+	
+
+
+	</style>
+</head>
+<body>
+
+<div class="menu">
+	<ul>
+		<li><div class="flecha"></div>Elemento 1</li>
+		<li><div class="flecha"></div>Elemento 2</li>
+		<li><div class="flecha"></div>Elemento 3</li>
+		<li><div class="flecha"></div>Elemento 4</li>
+		<li><div class="flecha"></div>Elemento 5</li>
+		<li class="ultima"><div class="flecha"></div>Elemento 6</li>
+
+	</ul>
+</div>
+</body>
+</html>
